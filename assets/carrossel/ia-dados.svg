@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#4b2444"/><stop offset="1" stop-color="#1f1024"/></linearGradient>
+    <radialGradient id="r" cx="75%" cy="20%" r="60%"><stop offset="0" stop-color="#d8c5d4" stop-opacity=".55"/><stop offset="1" stop-color="#d8c5d4" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#g)"/>
+  <rect width="1200" height="760" fill="url(#r)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="3">
+    <path d="M120 540 C260 360 380 620 520 420 S820 220 1070 360"/>
+    <path d="M180 250 C320 150 430 270 560 190 S850 90 1020 190"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="190" cy="540" r="14"/><circle cx="350" cy="430" r="11"/><circle cx="520" cy="420" r="18"/><circle cx="720" cy="290" r="12"/><circle cx="930" cy="330" r="16"/><circle cx="1070" cy="360" r="10"/>
+  </g>
+  <g opacity=".22" fill="#fff">
+    <rect x="110" y="110" width="220" height="42" rx="21"/><rect x="110" y="172" width="330" height="26" rx="13"/><rect x="110" y="214" width="260" height="26" rx="13"/>
+    <rect x="800" y="520" width="270" height="38" rx="19"/><rect x="800" y="580" width="190" height="26" rx="13"/>
+  </g>
+  <text x="96" y="655" fill="#fff" font-family="Inter, Arial" font-size="52" font-weight="800">Dados conectados, IA aplicada</text>
+</svg>

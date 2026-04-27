@@ -1,80 +1,33 @@
-# Site NADIA
+# Site do NADIA
 
-Site estático do NADIA - Núcleo de Análise de Dados e Inteligência Artificial.
+Versão atualizada com hero inicial reformulado.
 
-## Como publicar no GitHub Pages
+## O que foi alterado
+- logo principal atualizada para a versão branca com fundo transparente;
+- hero inicial simplificado, sem cards e sem a logo sobreposta ao conteúdo;
+- fundo do hero com imagens reais desfocadas em rotação automática;
+- botões principais: **Conheça projetos** e **Equipe**;
+- favicon incluído em todas as páginas;
+- visual geral mantido leve e compatível com GitHub Pages.
 
-1. Crie um repositório no GitHub, por exemplo: `nadia-site`.
-2. Envie todos os arquivos desta pasta para o repositório.
-3. No GitHub, acesse **Settings > Pages**.
-4. Em **Build and deployment**, escolha:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. Clique em **Save**.
-6. O GitHub irá gerar um link público para o site.
+## Arquivos principais
+- `index.html` → página inicial;
+- `styles.css` → estilos gerais do site e das páginas de projetos;
+- `script.js` → menu mobile e rotação automática das imagens do hero;
+- `assets/nadia-logo-branco.svg` → logo atual do menu;
+- `assets/icons/favicon.png` → favicon do site;
+- `assets/hero/` → imagens de fundo do hero inicial.
 
-## Estrutura
+## Como trocar o texto principal do topo
+No arquivo `index.html`, edite o bloco:
+- `<h1>...</h1>`
+- `<p class="hero-text">...</p>`
 
-- `index.html`: página principal.
-- `styles.css`: estilos, identidade visual e responsividade.
-- `script.js`: menu responsivo.
-- `assets/nadia-logo.png`: logomarca do grupo.
-- `assets/pessoas/`: fotos do time.
-- `projetos/`: páginas individuais dos projetos.
+## Como trocar as imagens do topo
+Substitua os arquivos dentro de `assets/hero/` e, se necessário, ajuste os caminhos no bloco `.hero-background` do `index.html`.
 
-## Edição rápida
+## Publicação no GitHub Pages
+Se o repositório for de projeto, o endereço padrão será algo como:
+`https://gmlunardi.github.io/nome-do-repositorio/`
 
-### Alterar textos da página principal
-Edite o arquivo `index.html`. As principais seções estão marcadas por `id`, como:
-
-- `#sobre`
-- `#atuacao`
-- `#projetos`
-- `#time`
-- `#egressos`
-- `#depoimentos`
-- `#publicacoes`
-- `#locais`
-- `#contato`
-
-### Atualizar fotos das pessoas
-1. Coloque as fotos na pasta `assets/pessoas/`.
-2. O ideal é usar imagens quadradas, em JPG ou PNG, com pelo menos 800 x 800 px.
-3. As fotos dos líderes já estão salvas como `gabriel-lunardi.jpg` e `adriano-quiliao.jpg`. Para trocar alguma foto, substitua o arquivo mantendo o mesmo nome, ou altere o caminho da imagem no bloco `#time` do arquivo `index.html`.
-
-Exemplo:
-
-```html
-<img src="assets/pessoas/nome-da-pessoa.jpg" alt="Foto de Nome da Pessoa" />
-```
-
-### Adicionar uma nova pessoa ao time
-Copie um bloco `article` da seção `#time`, altere nome, função, descrição e foto.
-
-### Alterar projetos
-Edite os arquivos dentro de `projetos/`.
-
-### Adicionar novo projeto
-1. Copie uma página existente da pasta `projetos/`.
-2. Renomeie o arquivo.
-3. Altere o conteúdo da página.
-4. Adicione um novo card na seção `Projetos em destaque` do `index.html`.
-
-### Atualizar locais físicos
-Edite a seção `#locais` do arquivo `index.html`. O campo “Sala XPTO” foi mantido como marcador para atualização quando a sala definitiva do campus de Cachoeira do Sul for confirmada.
-
-### Mudar cores, espaçamentos ou layout
-Edite `styles.css`.
-
-## Redes sociais
-
-O site aponta para o Instagram do grupo: https://www.instagram.com/nadia.ufsm/
-
-
-## Atualização v6
-
-- A foto do professor Gabriel Machado Lunardi foi substituída pelo arquivo `assets/pessoas/gabriel-lunardi.jpg`.
-- A seção de projetos agora apresenta apenas: curso de Ciência de Dados e IA; guia de IA generativa e agente conversacional; automatização de fichas SINAN; gestão de medicamentos para tuberculose; análise dos indicadores DEC e FEC da ANEEL.
-- Para editar um projeto, altere o card em `index.html` e a página correspondente na pasta `projetos/`.
-- Os projetos antigos de recomendação, visão computacional e agentes genéricos foram removidos do menu de projetos, preservando essas áreas como expertises do grupo na seção “Atuação”.
+Se quiser usar um domínio personalizado, crie um arquivo `CNAME` na raiz do site com o domínio desejado e configure os registros DNS no seu provedor.

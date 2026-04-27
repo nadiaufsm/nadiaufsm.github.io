@@ -8,13 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" id="topo">
     <nav class="navbar" aria-label="Navegação principal">
       <a class="brand" href="#topo" aria-label="Página inicial NADIA">
-        <img src="assets/nadia-logo.png" alt="Logomarca do NADIA" />
+        <img src="assets/nadia-logo-branco.svg" alt="Logomarca do NADIA" />
         <span>NADIA</span>
       </a>
       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
@@ -30,25 +31,30 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Pesquisa aplicada • Dados • Inteligência Artificial</p>
-        <h1>IA para transformar dados em soluções de impacto real.</h1>
+    <section class="hero hero-immersive" aria-label="Apresentação do NADIA">
+      <div class="hero-background" aria-hidden="true">
+        <figure class="hero-slide active">
+          <img src="assets/hero/hero-dados-1.png" alt="Ambiente de análise de dados e pesquisa aplicada" />
+        </figure>
+        <figure class="hero-slide">
+          <img src="assets/hero/hero-dados-2.png" alt="Pesquisadores em ambiente tecnológico de pesquisa" />
+        </figure>
+        <figure class="hero-slide">
+          <img src="assets/hero/hero-dados-3.png" alt="Centro moderno de operações com telas e dashboards" />
+        </figure>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content hero-panel">
+        <p class="eyebrow">Núcleo de análise de dados e inteligência artificial</p>
+        <h1>Nós somos dados, IA e impacto real.</h1>
         <p class="hero-text">
-          O NADIA desenvolve pesquisa aplicada em processamento de linguagem natural, sistemas de recomendação, recuperação de informação e visão computacional, com aplicações em energia, saúde, educação e gestão pública.
+          O NADIA conecta pesquisa, formação e desenvolvimento de soluções digitais para transformar dados em produtos,
+          sistemas e decisões com valor para a universidade e para a sociedade.
         </p>
         <div class="hero-actions">
-          <a href="#projetos" class="btn primary">Conheça os projetos</a>
-          <a href="#contato" class="btn secondary">Fale com os líderes</a>
-        </div>
-      </div>
-      <div class="hero-card" aria-label="Destaques do NADIA">
-        <img src="assets/nadia-logo.png" alt="Logomarca NADIA" />
-        <div class="stats-grid">
-          <div><strong>PLN</strong><span>texto, busca e recomendação</span></div>
-          <div><strong>Visão</strong><span>imagens, vídeos e padrões</span></div>
-          <div><strong>IA</strong><span>modelos aplicados</span></div>
-          <div><strong>Impacto</strong><span>projetos com entrega real</span></div>
+          <a href="#projetos" class="btn primary">Conheça projetos</a>
+          <a href="#time" class="btn secondary">Equipe</a>
         </div>
       </div>
     </section>
