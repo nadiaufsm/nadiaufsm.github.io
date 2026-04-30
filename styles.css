@@ -55,7 +55,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.05em;
 }
 .brand img {
-  width: 156px;
+  width: 170px;
   height: auto;
   max-height: 48px;
   object-fit: contain;
@@ -271,7 +271,7 @@ img { display: block; max-width: 100%; }
 .cards.three { grid-template-columns: repeat(3, 1fr); }
 .cards.four { grid-template-columns: repeat(4, 1fr); }
 .project-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-.people-grid { grid-template-columns: repeat(4, 1fr); }
+.people-grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .timeline { grid-template-columns: repeat(3, 1fr); }
 .quote-grid { grid-template-columns: repeat(2, 1fr); }
 .location-grid,
@@ -303,6 +303,57 @@ blockquote,
   justify-content: center;
   font-weight: 800;
   margin-bottom: 18px;
+}
+
+.service-grid {
+  align-items: stretch;
+}
+.service-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.service-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #eae6eb;
+}
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+.service-card:hover .service-image img {
+  transform: scale(1.04);
+}
+.service-content {
+  padding: 24px;
+}
+.service-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.service-tag::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--purple);
+}
+.service-card h3 {
+  margin-bottom: 12px;
+}
+.service-card p {
+  color: var(--muted);
 }
 .card h3,
 .project-card h3,
@@ -507,6 +558,9 @@ blockquote cite {
   .quote-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .service-grid.cards.three {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .hero-immersive {
     min-height: 82vh;
     padding-top: 0;
@@ -521,7 +575,7 @@ blockquote cite {
 
 @media (max-width: 620px) {
   :root { --nav-height: 78px; }
-  .brand img { width: 126px; }
+  .brand img { width: 140px; }
   .cards.three,
   .cards.four,
   .people-grid,

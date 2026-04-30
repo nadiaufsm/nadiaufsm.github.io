@@ -31,3 +31,8 @@ Se o repositório for de projeto, o endereço padrão será algo como:
 `https://gmlunardi.github.io/nome-do-repositorio/`
 
 Se quiser usar um domínio personalizado, crie um arquivo `CNAME` na raiz do site com o domínio desejado e configure os registros DNS no seu provedor.
+
+
+## Atualização do time
+- A foto do professor Thiago está em `assets/pessoas/thiago-trugillo.png`.
+- Para editar o texto dos integrantes, altere a seção `Time NADIA` no arquivo `index.html`.
